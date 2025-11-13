@@ -1,0 +1,15 @@
+Demo plan (1-2 minutes each):
+
+1) Sockets system:
+- Start server: ./server
+- Open 2 clients: ./client (enter server IP, nick A, nick B)
+- Type "hello" from A -> show B receives "[A] hello"
+- Show server terminal logs.
+
+2) Shared memory system:
+- Start reader: ./reader
+- Start writer: ./writer (enter nick)
+- Send messages; show they appear on reader.
+- Show that multiple writer processes can be started.
+
+Finish: Quick comparison: sockets over network, shared memory on same host; semaphores prevent races.
